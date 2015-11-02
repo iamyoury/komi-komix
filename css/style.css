@@ -7,13 +7,15 @@ body {
 h1, h2, h3, h4, h5 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	color: #555;
-	text-transform: uppercase;
+	color: #333;
+
+
 }
 h4 {
 	font-size: 2rem;
+	margin: 0;
 }
-a {
+a, .btn-group .btn  {
 	color: #666;
 	font-weight: 300;
 }
@@ -24,12 +26,24 @@ p {
 	color: #777;
 	font-weight: 300;
 }
+address {
+	color: #777;
+}
 hr {
 	border-color: #999;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.btn, .btn:hover, .btn:focus {
+	font-weight: 300;
+	color: #777;
+}
+iframe {
+	width: 100%;
+	margin-bottom: 30px;
+}
 .baner {
+	position: relative;
 	height: 300px;
 	width: 100%;
 	color: #fff;
@@ -42,10 +56,13 @@ hr {
 	padding-left: 20px;
 }
 .head-baner {
-	height: 250px;
-	padding-top: 50px;
+	position: absolute;
+	top: 15%;
+	height: 150px;
 }
 .foot-baner{
+	position: absolute;
+	bottom: 0px;
 	height: 50px;
 }
 .baner h2 {
@@ -53,7 +70,7 @@ hr {
 	color: #fff;
 	margin: 0;
 	font-weight: 300;
-	line-height: 4.8rem;
+	line-height: 4.3rem;
 }
 .baner p {
 	color: #fff;
@@ -112,7 +129,16 @@ h2 small {
 .navbar-nav li a {
 	font-weight: 400;
 }
-
+nav .pagination, nav .pagination a {
+	background: #eee;
+	color: #666;
+}
+.pagination li > a, .pagination li > span {
+	border-left: none;
+}
+.pagination li.active > a, .pagination li.active > span, nav .pagination a:hover, .pagination li.active a:hover,.pagination li a:focus  {
+	background: #999;
+}
 .nav a {
 	line-height: 40px;
 	font-size: 1.4rem;
@@ -127,10 +153,15 @@ h2 small {
 .nav li a:hover {
 	Box-shadow:0px 1px 0px #000;
 }
-.navbar-toggle:before {
+.navbar-toggle:before{
 	color: #000;
 }
-.navbar-toggle:hover {
+.navbar-toggle {
+  width: 100%;
+  float: none;
+  margin: 0;
+}
+.navbar-header .navbar-toggle:hover:before, .navbar-toggle:focus:before {
 	color: #000;
 }
 .navbar .navbar-nav {
@@ -149,6 +180,29 @@ h2 small {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.pie {
+	position: relative;
+	margin-top: 50px;
+	background: transparent;
+	padding: 9px;
+	color: #000;
+	border-bottom: 1px solid #fff;
+}
+.pie .fa-shopping-cart {
+	position: absolute;
+	right: 9px;
+	font-size: 30px;
+	line-height: 4.1rem;
+}
+.pie .cart-count {
+	
+}
+.pie .cart-count, .pie .cart-text {
+    display: block;
+    float: right;
+    margin-right: 2.6em;
+    font-size: 1.6rem;
+ }
 .copy {
 	margin-top: 30px;
 }
@@ -173,14 +227,15 @@ aside .head-list, aside .head-list h4 {
 	border: 2px solid #EF6C00;
 	border-color: #EF6C00;
 }
-.thumbnail h4, .thumbnail p{
+.thumbnail h4, .thumbnail p {
 	font-size: 1.6rem;
 	font-weight: 400;
+	text-transform: none;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 .thumbnail p{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: 300;
 	margin-bottom: 10px;
 }
@@ -208,38 +263,83 @@ aside .head-list, aside .head-list h4 {
 .thumbnail .image-wrapper {
 	height: 270px;
 }
-.thumbnail .img-center {
+.thumbnail .img-center, .items .img-center {
 	max-height: 270px;
 	margin: 0 auto;
 }
+.thumbnail .caption {
+	margin-top: 5px;
+	border-top: 1px solid #999;
+}
+.items {
+	max-width: 250px;
+	border: 2px solid #eee;
+}
+.card {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  color: #272727;
+  border-radius: 2px; }
+  .card .title {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300; }
+  .card .content {
+    padding: 1.3rem;
+    font-weight: 300;
+    border-radius: 0 0 2px 2px; }
+  .card p {
+    margin: 0; }
+  .card .action {
+    border-top: 1px solid #eee;
+    padding: 1.3rem; }
+  .card a {
+    color: #ffab40;
+    margin-right: 1.3rem;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .card .image {
+    position: relative; }
+    .card .image .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 1.3rem;
+      color: #fff; }
+    .card .image img {
+      border-radius: 2px 2px 0 0; }
+ .image {
+ 	background: #eee;
+ }
 .vk {
 	height: 32px;
 	width: 32px;
-	background: no-repeat url("../img/icon.webp") 0 -1241px;;
+	background: no-repeat url("../img/icon.png") -192px 0;;
 	background-size: auto;
 }
 .google {
 	height: 32px;
 	width: 32px;
-	background: no-repeat url("../img/icon.webp") 0 -276px;;
+	background: no-repeat url("../img/icon.png") -64px -32px;;
 	background-size: auto;
 }
 .facebook {
 	height: 32px;
 	width: 32px;
-	background: no-repeat url("../img/icon.webp") 0 -861px;;
+	background: no-repeat url("../img/icon.png") -128px -96px;;
 	background-size: auto;
 }
 .tweeter {
 	height: 32px;
 	width: 32px;
-	background: no-repeat url("../img/icon.webp") 0 -348px;;
+	background: no-repeat url("../img/icon.png") 0 -160px;;
 	background-size: auto;
 }
 .tumbler {
 	height: 32px;
 	width: 32px;
-	background: no-repeat url("../img/icon.webp") 0 -1421px;;
+	background: no-repeat url("../img/icon.png") -160px -96px;;
 	background-size: auto;
 }
 footer {
@@ -261,11 +361,17 @@ footer {
     .nav li a:hover {
 		Box-shadow: none; }
 	.baner h2 {
-		font-size: 3rem;
+		font-size: 3rem; }
+	.baner {
+	height: 300px;
+	width: 100%;
+	height: 200px;
+	color: #fff;
+	background-size: 300px; }
 
 }
 @media screen and (max-width: 650px) {
-  .banner {
+  .baner {
 	height: 300px;
 	width: 100%;
 	color: #fff;
@@ -279,7 +385,6 @@ footer {
       -webkit-text-size-adjust: none;
    }
    .logo {	
-	height: 100px;
-}
+	height: 100px; }
 
 }
