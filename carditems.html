@@ -62,7 +62,7 @@
 </nav>
 	<div class="container">
 		<div class="row">
-			<div class="hidden-xs col-md-3 col-sm-4">
+			<div class="hidden-xs hidden-sm col-md-3">
 				<div class="input-group">
 			      <input type="text" class="form-control" placeholder="Найди свой комикс...">
 			      <span class="input-group-btn">
@@ -177,18 +177,89 @@
 					</div>
 				</aside>
 			</div>
-			<div class="col-md-9 col-sm-8">
+			<div class="col-md-9">
 				<div class="row">
-				  <div class="col-md-6">
-				  	<div class="items center-block">
-						    <a href="#">
-						    	<div class="image-wrapper">
-						    		<img src="img/4.jpg" alt="..." class="img-responsive img-center">
-						    	</div>
-						    </a>
+				  <div class="col-md-5 col-sm-5 col-lg-4">
+				  		<div class="items center-block">
+					  		<a href="#">
+							    <div class="image-wrapper">
+							    	<img src="img/4.jpg" alt="..." class="img-responsive img-center">
+							    </div>
+							</a>    
 					    </div>
 				  </div>
-				  <div class="col-md-6"></div>
+				  <div class="col-md-7 col-sm-7 col-lg-8 ">
+				  	<div class="description copy">
+					  	<h3> Зигги, космический хомяк <br/> <small> Детский комикс увеличенного формата </small> </h3>
+					  	<p class="p_small text-justify copy">
+					  	Сценарист Роман Котков и художник Евгений Яковлев создали комикс, одновременно детский и взрослый, с весёлым юмором и прекрасными иллюстрациями. <br/>
+					  	Приключения находчивого инопланетного хомяка Зигги и его брата-акулёнка Йанго придутся по душе всем: как новым читателям, так и фанатам комиксов!
+					  	</p>
+					  	<p class="p_small copy">
+					  	Издательство: Bubble <br/>
+						Стр.: 24
+					  	</p>
+					</div>
+				  	<hr/>
+				  	<div id="price">
+				  		<span class="price"> 120.00 ₽ </span>
+				  		<span class="quantity">
+				  			<span class="fui-cross"> </span>
+				  			<input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
+				  		</span>
+				  	</div>
+				  	
+					
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-orange btn-lg" data-toggle="modal" data-target="#myModal">
+					  В корзину
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title text-center" id="myModalLabel">Прекрасный выбор!</h4>
+					      </div>
+					      <div class="modal-body">
+					      	<table class="table">
+								<tbody>
+									<tr class="text-right">
+									    <td>
+										    <div class="image-wrapper hidden-xs">
+											   <img src="img/4.jpg" alt="..." class="img-responsive img-center">
+											</div>
+											<label class="text-left">Зигги, космический хомяк</label>  
+									    </td>
+									    <td>
+									    	<span class="quantity">
+								  			<span class="fui-cross"> </span>
+								  			<input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
+								  			</span>
+									    </td>
+									    <td>120.00 ₽</td>
+									    <td><a href="#"><i class="fa fa-trash"></i></a></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td class="text-right total_price"> Итого: 120.00 ₽ </td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-orange-o" data-dismiss="modal"> Продолжить покупки </button>
+					        <button type="button" class="btn btn-orange"> Заказать </button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+				  </div>
 				</div>
 			</div>
 		</div>
@@ -249,4 +320,5 @@
    <!-- Prefix -->
    <script src="js/prefixfree.min.js"></script>
    <!-- Share buttons --> 
+   
 </body>
