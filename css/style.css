@@ -46,29 +46,18 @@ table {
 	margin-bottom: 0px !important;
 }
 
-.table tbody tr td {
+.modal-body .table tbody tr td {
     vertical-align: middle;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #666;
     padding-right: 20px;
     padding-left: 20px; 
 }
-.table tbody tr td label {
-    line-height: 1.5rem;
-    color: #666; 
-    max-width: 100px;
+.table tbody .price_total {
+	font-weight: 500;
 }
-.table tbody tr td .quantity {
-	font-size: 2rem;
-}
-.table tbody tr .total_price {
-	min-width: 150px;
-}
-.modal-body {
-	padding: 0px;
-}
-.modal-header {
-	border-bottom: 0px;
+.modal-header, .modal-footer  {
+	border: 0px;
 }				
 hr {
 	border-color: #eee;
@@ -126,25 +115,27 @@ h3 small {
 	background: #EF6C00;
 	border: 1px solid #EF6C00;
 	color: #fff;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.7rem;
 	margin-top: 10px;
 }
 .btn-orange:hover, .btn-orange:focus {
 	border: 1px solid #EF6C00;
+	font-weight: 400;
 	color: #fff;
 }
 .btn-orange-o {
 	background: #fff;
 	border: 1px solid #EF6C00;
 	color: #EF6C00;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.7rem;
 	margin-top: 10px;
 }
 .btn-orange-o:hover, .btn-orange-o:focus {
 	border: 1px solid #EF6C00;
 	color: #EF6C00;
+	font-weight: 400;
 }
 .btn-default {
 	background: #eee;
@@ -243,7 +234,7 @@ nav .pagination, nav .pagination a {
   text-align: center;
 }
 .logo {	
-	height: 170px;
+	height: 230px;
 	background: url("../img/vkkx.png");
 	background-position: center;
 	background-size: contain;
@@ -363,13 +354,6 @@ aside .head-list, aside .head-list h4 {
 	color: #666;
 	vertical-align: middle;
 }
-.quantity span {
-	display: table-cell;
-	vertical-align: middle;
-	font-size: 1.5rem;
-	padding-right: 15px;
-	padding-left: 15px;
-}
 .card {
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
@@ -449,6 +433,21 @@ footer {
 } 
 .pay-card i {
 	font-size: 2.5rem;
+}
+.lead {
+	font-size: 2.2rem;
+}
+.panel-body {
+	padding: 0;
+}
+.card_block {
+	border: 1px solid #eee;
+	border-radius: 6px;
+	padding: 20px;
+} 
+.login-form {
+	background: #fff;
+	padding: 0;
 }
 @media screen and (max-width: 980px) {
 	.nav a {

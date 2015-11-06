@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<title> О нас  </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/flat-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="btn-group btn-group-xs pull-right" role="group" aria-label="...">
+						<button type="button" class="btn btn-top"> Мой аккаунт </button>
+						<button type="button" class="btn btn-top hidden-lg hidden-md"> <i class="fa fa-shopping-cart"></i> <span> (0) </span></button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="logo"></div>
+				</div>
+				<div class="col-md-3">
+					
+						<button class="btn pie pull-right hidden-sm hidden-xs">
+							<span class="cart-count"> Вещей в корзине (0) </span>
+							<span class="cart-text"> 0,00 ₽ </span>
+							 <i class="fa fa-shopping-cart fa-lg"></i>
+						</button>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav center-block">
+        <li class="active"><a href="index.html"> Каталог <span class="sr-only">(current)</span></a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="#">Оплата и доставка</a></li>
+        <li><a href="about.html">О нас</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="container">
+		<div class="row">
+		<!--
+			<div class="col-md-4 col-md-offset-4">
+				<h4 class="text-center copy">Вход в аккаунт</h4>
+				<div class="login-form copy">
+			        <div class="form-group">
+			            <input type="text" class="form-control login-field" value="" placeholder="Введите вашу почту" id="login-name">
+			            <label class="login-field-icon fui-user" for="login-name"></label>
+			        </div>
+			        <div class="form-group">
+			            <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass">
+			            <label class="login-field-icon fui-lock" for="login-pass"></label>
+			        </div>
+			        <a class="btn btn-primary btn-lg btn-block" href="#">Вход</a>
+			        <a class="login-link" href="#">Lost your password?</a>
+		        </div>
+			</div>
+		-->
+			<div class="col-md-10 col-md-offset-1">
+				<div class="card_block">
+						<div class="b_title">
+							<div class="page-header">
+  								<h3>Оформление заказа</h3>
+							</div>
+						</div>
+					    <div role="tab" id="headingTwo">
+					        <button role="button" class="close" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+					          <span aria-hidden="true">×</span>
+					        </button>
+					    </div>
+					    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+					    <div class="panel-body">
+					    	<div class="row">
+					   		<div class="col-md-4 col-md-offset-2">
+					    	<p class="lead">Контактная информация</p>
+					    	<p class="p_small">Если у вас есть аккаунт на сайте, авторизуйтесь, чтобы контактные данные добавились в заказ автоматически.</p>
+					   		</div>
+					   		<div class="col-md-4">
+						    	<div class="login-form">
+							        <div class="form-group">
+							            <input type="text" class="form-control login-field" value="" placeholder="Введите вашу почту" id="login-name">
+							            <label class="login-field-icon fui-user" for="login-name"></label>
+							        </div>
+							        <div class="form-group">
+							            <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass">
+							            <label class="login-field-icon fui-lock" for="login-pass"></label>
+							        </div>
+							        <a class="btn btn-orange btn-lg btn-block" href="#">Войти</a>
+							        <a class="login-link" href="#">Забыли пароль?</a>
+					        	</div>
+					        </div>
+					        </div>
+					    </div>
+					    </div>
+					    <div class="row">
+					    <div class="col-md-8 col-md-offset-2">
+					    	<p class="lead copy">Продолжить без авторизации</p>
+					    	<input type="text" value="" data-rule-email="true" placeholder="Город" class="form-control" aria-invalid="false">
+					    	<input type="text" value="" data-rule-required="true" placeholder="Имя и фамилия" class="form-control copy" aria-required="true" aria-invalid="true">
+					    	<input type="tel" name="USER[PHONE_NUMBER]" value="" data-rule-phone="true" placeholder="Введите телефон" class="form-control copy" aria-invalid="true">
+					    	<input type="tel" name="USER[PHONE_NUMBER]" value="" data-rule-phone="true" placeholder="Электронная почта" class="form-control copy" aria-invalid="true">
+					    	<input type="tel" value="" data-rule-phone="true" placeholder="Почтовый индекс" class="form-control copy" aria-invalid="true">
+					    	<input type="tel" value="" data-rule-phone="true" placeholder="Адрес доствки" class="form-control copy" aria-invalid="true">
+					    	<p class="lead copy">Способ оплаты</p>
+					        <label class="radio">
+					            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Картой Visa или MasterCard
+					        </label>
+					        <label class="radio">
+					            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            WebMoney
+					        </label>
+					        <label class="radio">
+					            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            PayPal
+					        </label>
+					        <label class="radio">
+					            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            QIWI Wallet
+					        </label>
+					        <label class="radio">
+					            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Яндекс.Деньгами
+					        </label>
+					        
+					    </div>
+					    </div>
+					    <div class="row">
+					    	<div class="col-md-8 col-md-offset-2">
+					    		<div>
+					                <textarea name="user_description" id="call_back_txt" cols="30" rows="20" class="copy" placeholder="Комментарий" style="resize: none; overflow-y: hidden; height: 70px; width: 100%;" aria-invalid="false"></textarea>
+					            </div>
+					            <button class="btn btn-orange-o copy"> Назад </button>
+					            <button class="btn btn-orange pull-right copy"> Оформить заказ </button>
+					    	</div>
+					    </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-6 hidden-xs">
+							<strong>KomiKomix</strong>
+							<p class="p-main">
+							С 2010 года мы продаем комиксы всех стилей и направлений, для детей и взрослых, на русском и английском языках. Вы можете посетить один из двух наших магазинов в центре Москвы, либо сделать заказ онлайн, и мы доставим его курьером или почтой. Удачных покупок!
+							</p>
+							<ul class="share-gruop list-inline">
+							  <li> <button href="#" class="btn vk"></buttom> </li>
+							  <li> <button href="#" class="btn google"></buttom> </li>
+							  <li> <button href="#" class="btn facebook"></buttom> </li>
+							  <li> <button href="#" class="btn tweeter"></buttom> </li>
+							  <li> <button href="#" class="btn tumbler"></buttom> </li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-md-offset-2">
+							<address>
+							  <strong>Контакты</strong><br>
+							  г. Сыктывкар, ул. Первомайская, д.62<br>
+							  Торговый Комплекс «Торговый Двор», 7-й этаж<br>
+							  <abbr title="Phone">P:</abbr> (123) 456-7890<br>
+							  <abbr title="Email">E:</abbr> mail@komikomix.ru
+							</address>
+						</div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="col-md-6">
+							<i class="fa fa-copyright"></i> Copyright KomiKomix 2015
+						</div>
+						<div class="col-md-6 hidden-sm hidden-xs">
+							<div class="pull-right pay-card">
+								<i class="fa fa-cc-mastercard"></i>
+								<i class="fa fa-cc-visa"></i>
+								<i class="fa fa-credit-card"></i>
+								<i class="fa fa-cc-paypal"></i>	
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Flat -->
+   <script src="js/radiocheck.js"></script>
+   <!-- Prefix -->
+   <script src="js/prefixfree.min.js"></script>
+   <!-- Share buttons --> 
+   
+</body>

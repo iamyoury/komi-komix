@@ -2086,7 +2086,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .radio input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
 .checkbox input[type="radio"].custom-radio:checked + .icons .icon-checked,
 .radio input[type="radio"].custom-radio:checked + .icons .icon-checked {
-  color: #1abc9c;
+  color: #EF6C00;
           filter: none;
   opacity: 1;
 
@@ -5870,10 +5870,10 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   border-color: transparent;
   }
 .login-form .login-field:focus {
-  border-color: #1abc9c;
+  border-color: #EF6C00;
   }
 .login-form .login-field:focus + .login-field-icon {
-  color: #1abc9c;
+  color: #EF6C00;
   }
 .login-form .login-field-icon {
   position: absolute;

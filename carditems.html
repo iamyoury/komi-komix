@@ -197,15 +197,17 @@
 					  	</p>
 					  	<p class="p_small copy">
 					  	Издательство: Bubble <br/>
-						Стр.: 24
+						Вес: 600 г <br/>
+						Твердый переплет <br/>
+						Объем — 212 стр. <br/>
+						Формат — 225×155×25 мм
 					  	</p>
 					</div>
 				  	<hr/>
 				  	<div id="price">
 				  		<span class="price"> 120.00 ₽ </span>
 				  		<span class="quantity">
-				  			<span class="fui-cross"> </span>
-				  			<input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
+				  			× <input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
 				  		</span>
 				  	</div>
 				  	
@@ -226,34 +228,23 @@
 					      <div class="modal-body">
 					      	<table class="table">
 								<tbody>
-									<tr class="text-right">
-									    <td>
-										    <div class="image-wrapper hidden-xs">
-											   <img src="img/4.jpg" alt="..." class="img-responsive img-center">
-											</div>
-											<label class="text-left">Зигги, космический хомяк</label>  
-									    </td>
-									    <td>
-									    	<span class="quantity">
-								  			<span class="fui-cross"> </span>
-								  			<input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
-								  			</span>
-									    </td>
-									    <td>120.00 ₽</td>
-									    <td><a href="#"><i class="fa fa-trash"></i></a></td>
-									</tr>
 									<tr>
-										<td></td>
-										<td></td>
-										<td class="text-right total_price"> Итого: 120.00 ₽ </td>
-										<td></td>
+									    <td class="product_name"> Зигги, космический хомяк </td>
+									    <td class="item_amount"> × 1</td>
+									    <td class="item_cost money text-right">120.00 ₽</td>
+									    <td class="hidden-xs"><a href="#"><i class="fa fa-trash"></i></a></td>
+									</tr>
+									<tr class="price_total">
+										<td>Итого:</td>
+										<td colspan="2" class="text-right">240.00 ₽</td>
+										<td class="hidden-xs"></td>
 									</tr>
 								</tbody>
 							</table>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-orange-o" data-dismiss="modal"> Продолжить покупки </button>
-					        <button type="button" class="btn btn-orange"> Заказать </button>
+					        <button type="button" class="btn btn-orange-o hidden-xs" data-dismiss="modal"> Продолжить покупки </button>
+					        <a type="button" href="cardblock.html" class="btn btn-orange"> <i class="fa fa-shopping-cart"></i> Заказать </a>
 					      </div>
 					    </div>
 					  </div>
