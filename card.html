@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<title> О нас  </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/flat-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="btn-group btn-group-xs pull-right" role="group" aria-label="...">
+						<button type="button" class="btn btn-top"> Мой аккаунт </button>
+						<button type="button" class="btn btn-top hidden-lg hidden-md"> <i class="fa fa-shopping-cart"></i> <span> (0) </span></button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="logo"></div>
+				</div>
+				<div class="col-md-3">
+					
+						<button class="btn pie pull-right hidden-sm hidden-xs">
+							<span class="cart-count"> Вещей в корзине (0) </span>
+							<span class="cart-text"> 0,00 ₽ </span>
+							 <i class="fa fa-shopping-cart fa-lg"></i>
+						</button>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav center-block">
+        <li class="active"><a href="index.html"> Каталог <span class="sr-only">(current)</span></a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="#">Оплата и доставка</a></li>
+        <li><a href="about.html">О нас</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="card_block">
+					<div class="page-header">
+  						<h3>Корзина</h3>
+  					</div>
+  					<table class="table">
+  							<thead>
+  								<tr>
+  									<td>Описание</td>
+  									<td>Количество</td>
+  									<td class="text-right">Сумма</td>
+  									<td></td>
+  								</tr>
+  							</thead>
+							<tbody>
+								<tr>
+									<td class="product_name"> 
+									    <div class="row">
+											<div class="col-sm-2 hidden-xs">
+												<div class="label-wrapper">
+													<a href="carditems.html">
+													<img src="img/14.jpg" lass="img-responsive img-center"></a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<div class="basket_details">
+													<span class="title"> Зигги, космический хомяк </span>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td class="item_amount">
+									    <span class="quantity">
+				  							× <input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
+				  						</span></td>
+									<td class="item_cost money text-right">120.00&nbsp;₽</td>
+									<td class="text-right trash"><a href="#"><i class="fa fa-trash"></i></a></td>
+								</tr>
+								<tr>
+									<td class="product_name"> 
+									    <div class="row">
+											<div class="col-sm-2 hidden-xs">
+												<div class="label-wrapper">
+													<a href="carditems.html">
+													<img src="img/14.jpg" lass="img-responsive img-center"></a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<div class="basket_details">
+													<span class="title"> Человек муравей </span>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td class="item_amount">
+									    <span class="quantity">
+				  							× <input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
+				  						</span></td>
+									<td class="item_cost money text-right">200.00&nbsp;₽</td>
+									<td class="text-right trash"><a href="#"><i class="fa fa-trash"></i></a></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Итого:</td>
+									<td class="text-right item_cost">440.00&nbsp;₽</td>
+									<td class="trash"></td>
+								</tr>
+								<!--
+								<tr class="middle_index">
+									<td class="call_empty"></td>
+									<td>
+									<input type="tel" value="" data-rule-phone="true" placeholder="167021" class="form-control index" aria-invalid="true">
+									</td>
+									<td class="text-right">300.00&nbsp;₽</td>
+									<td class="trash"></td>
+								</tr>
+								<tr class="price_total">
+									<td class="call_empty"></td>
+									<td>Общая сумма:</td>
+									<td class="text-right">740.00&nbsp;₽</td>
+									<td class="trash"></td>
+								</tr>
+								-->
+							</tbody>
+					</table>
+					<hr/ class="dash copy">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<label class="input__title" data-reactid=".1.0.0.1.1:0.0">Стоимость доставки</label>
+							<div class="input-group search">
+						      <input type="text" class="form-control" placeholder="Индекс">
+						      <span class="input-group-btn">
+						        <button class="btn btn-default" type="button">Посчитать</button>
+						      </span>
+						    </div><!-- /input-group -->
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table copy">
+								<tbody>
+									<tr class="price_total">
+										<td >Общая сумма с учетом доставки:</td>
+										<td class="item_amount"></td>
+										<td class="item_cost money text-right">740.00&nbsp;₽</td>
+										<td class="text-right trash"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-12">
+							<a class="btn btn-info copy hidden-xs" href="index.html"> ← Назад к покупкам </a>
+							<a class="btn btn-primary pull-right copy" href="cardblock.html"> Оформить заказ → </a>
+						</div>
+					</div>	
+					<hr/ class="copy">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<div class="centre-basket-banner copy center-block">
+                        		 <div class="box-wrapper">
+						            <span class="icon"><i class="fa fa-bicycle"></i></span>
+						            <h2 class="text-center">Бесплатная доставка</h2>
+						            <p class="text-center p_small">по Республике Коми<br>
+						            на заказы от 500 руб.</p>
+						        </div>
+						    </div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="centre-basket-banner copy center-block">
+                        		 <div class="box-wrapper">
+						            <span class="icon"><i class="fa fa-mobile"></i></span>
+						            <h2 class="text-center">СМС-уведомление</h2>
+						            <p class="text-center p_small">Бесплатное уведомление <br/>о прибытии в отделение</p>
+						        </div>
+						    </div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="centre-basket-banner copy center-block">
+                        		 <div class="box-wrapper">
+						            <span class="icon"><i class="fa fa-gift"></i></span>
+						            <h2 class="text-center">Подарки</h2>
+						            <p class="text-center p_small">Наклейки, магниты, плакаты<br/> на заказы от 1500 руб.</p>
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-6 hidden-xs">
+							<strong>KomiKomix</strong>
+							<p class="p-main">
+							С 2010 года мы продаем комиксы всех стилей и направлений, для детей и взрослых, на русском и английском языках. Вы можете посетить один из двух наших магазинов в центре Москвы, либо сделать заказ онлайн, и мы доставим его курьером или почтой. Удачных покупок!
+							</p>
+							<ul class="share-gruop list-inline">
+							  <li> <button href="#" class="btn vk"></buttom> </li>
+							  <li> <button href="#" class="btn google"></buttom> </li>
+							  <li> <button href="#" class="btn facebook"></buttom> </li>
+							  <li> <button href="#" class="btn tweeter"></buttom> </li>
+							  <li> <button href="#" class="btn tumbler"></buttom> </li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-md-offset-2">
+							<address>
+							  <strong>Контакты</strong><br>
+							  г. Сыктывкар, ул. Первомайская, д.62<br>
+							  Торговый Комплекс «Торговый Двор», 7-й этаж<br>
+							  <abbr title="Phone">P:</abbr> (123) 456-7890<br>
+							  <abbr title="Email">E:</abbr> mail@komikomix.ru
+							</address>
+						</div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="col-md-6">
+							<i class="fa fa-copyright"></i> Copyright KomiKomix 2015
+						</div>
+						<div class="col-md-6 hidden-sm hidden-xs">
+							<div class="pull-right pay-card">
+								<i class="fa fa-cc-mastercard"></i>
+								<i class="fa fa-cc-visa"></i>
+								<i class="fa fa-credit-card"></i>
+								<i class="fa fa-cc-paypal"></i>	
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Flat -->
+   <script src="js/radiocheck.js"></script>
+   <!-- Prefix -->
+   <script src="js/prefixfree.min.js"></script>
+   <!-- Share buttons --> 
+   
+</body>

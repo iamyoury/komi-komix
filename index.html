@@ -84,10 +84,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="hidden-xs col-md-3 col-sm-4">
-				<div class="input-group">
+				<div class="input-group search">
 			      <input type="text" class="form-control" placeholder="Найди свой комикс...">
 			      <span class="input-group-btn">
-			        <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+			        <button class="btn" type="button"> <i class="fa fa-search"></i> </button>
 			      </span>
 			    </div>
 				<aside class="list-group copy">
@@ -99,13 +99,22 @@
 					    </div>
 					    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 					      <div class="panel-body">
-					      	<ul class="list-unstyled">
-					      		<li><a href="#"> Любые </a></li>
-					        	<li><a href="#"> MC </a></li>
-								<li><a href="#"> Marvel </a></li>
-								<li><a href="#"> Bubble </a></li>
-								<li><a href="#"> что то еще </a></li>
-							</ul>
+					      	<label class="checkbox" for="checkbox2">
+					            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Все
+					          </label>
+					          <label class="checkbox" for="checkbox1">
+					            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            DC
+					          </label>
+					          <label class="checkbox" for="checkbox3">
+					            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Marvel
+					          </label>
+					          <label class="checkbox" for="checkbox4">
+					            <input type="checkbox" value="" id="checkbox4" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Bubble
+					          </label>
 					      </div>
 					    </div>
 					</div>
@@ -116,13 +125,23 @@
 					        </a>
 					    </div>
 					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-					      <div class="panel-body">
-					      	<ul class="list-unstyled">
-					        	<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-							</ul>
+					      <div class="panel-body">  
+					          <label class="checkbox" for="checkbox2">
+					            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Все
+					          </label>
+					          <label class="checkbox" for="checkbox1">
+					            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            DC
+					          </label>
+					          <label class="checkbox" for="checkbox1">
+					            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Marvel
+					          </label>
+					          <label class="checkbox" for="checkbox1">
+					            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" class="custom-checkbox"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+					            Bubble
+					          </label>
 					      </div>
 					    </div>
 					</div>
@@ -208,7 +227,7 @@
 						</div>
 					</div>
 				</div>
-				<hr class="copy" style="border-color: #eee;">
+				<hr class="copy">
 				<div class="row">
 					<div class="col-sm-6 col-md-4 col-lg-3">
 					    <div class="thumbnail copy center-block">

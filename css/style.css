@@ -64,9 +64,11 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.btn, .btn:hover, .btn:focus {
-	font-weight: 300;
-	color: #777;
+.dash {
+    border-width: 0;
+    border-bottom-style: dashed;
+    border-color: #ccc;
+    border-bottom-width: 1px; 
 }
 .baner {
 	position: relative;
@@ -80,6 +82,25 @@ hr {
 	background-position: 90% -10%;
 	margin-bottom: 30px;
 	padding-left: 20px;
+}
+.centre-basket-banner {
+	border: 1px solid #ccc;
+	padding: 10px;
+	max-width: 360px;
+	height: 210px;
+	overflow: hidden;
+	text-align: center;
+}
+.centre-basket-banner h2 {
+	margin-top: 15px;
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.centre-basket-banner i {
+	color: 333;
+	font-size: 3rem;
+	padding: 10px;
 }
 .head-baner {
 	position: absolute;
@@ -111,19 +132,6 @@ h3 small {
 	font-weight: 300;
 	color: #666;
 }
-.btn-orange {
-	background: #EF6C00;
-	border: 1px solid #EF6C00;
-	color: #fff;
-	font-weight: 400;
-	font-size: 1.7rem;
-	margin-top: 10px;
-}
-.btn-orange:hover, .btn-orange:focus {
-	border: 1px solid #EF6C00;
-	font-weight: 400;
-	color: #fff;
-}
 .btn-orange-o {
 	background: #fff;
 	border: 1px solid #EF6C00;
@@ -137,25 +145,18 @@ h3 small {
 	color: #EF6C00;
 	font-weight: 400;
 }
-.btn-default {
-	background: #eee;
-	color: #666;
-	font-weight: 300;
-}
-.btn-default:hover, .btn-default:focus {
-	color: #666;
-}
 .p-main {
 	line-height: 2.5rem;
 	font-weight: 300;
 }
-.form-control {
-	border: 1px solid #eee;
-	background: #eee; 
-}
-.form-control:focus {
-	border: 1px solid #eee; 
-}
+.search .form-group.focus .form-control,
+.search .form-control:focus,
+.search .form-group.focus .select2-search input[type="text"],
+.search .select2-search input[type="text"]:focus {
+  border-color: #eee;
+  outline: 0;
+  box-shadow: none;
+  }
 .input-group-btn .btn {
 	background: #eee;
 	color: #666;
@@ -211,7 +212,7 @@ nav .pagination, nav .pagination a {
 	letter-spacing: 1px;
 }
 .nav li a:hover {
-	Box-shadow:0px 1px 0px #000;
+	color: #EF6C00;
 }
 .navbar-toggle:before{
 	color: #000;
@@ -234,7 +235,7 @@ nav .pagination, nav .pagination a {
   text-align: center;
 }
 .logo {	
-	height: 230px;
+	height: 100px;
 	background: url("../img/vkkx.png");
 	background-position: center;
 	background-size: contain;
@@ -242,7 +243,6 @@ nav .pagination, nav .pagination a {
 }
 .pie {
 	position: relative;
-	margin-top: 50px;
 	background: transparent;
 	padding: 9px;
 	color: #000;
@@ -327,6 +327,45 @@ aside .head-list, aside .head-list h4 {
 	max-width: 60px;
 	float: left;
 }
+.label-wrapper {
+
+}
+.table tbody tr td {
+	font-size: 1.5rem;
+}
+.table tbody .middle_index td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	vertical-align: middle;
+}
+.table tbody .middle_index .form-control {
+	background-color: transparent;
+	border: 0px;
+}
+.table>tbody>tr> .product_name {
+	width: 50%;
+	font-weight: 300;
+}
+.table>tbody> .price_total td {
+	border-top: 2px dashed #666;
+    border-top-width: 1px;
+}
+.table>thead {
+	font-size: 1.3rem;
+}
+.table>tbody>tr> .call_empty, .table>thead>tr> .call_empty {
+	border-top: 0px;
+	background-color: transparent;
+}
+.table>tbody>tr> .item_cost {
+	width: 100px;
+}
+.table>tbody>tr>td .index {
+	width: 100px;
+}
+.table tbody tr .trash {
+	width: 20px;
+}
 .thumbnail .img-center, .items .img-center {
 	max-height: 270px;
 	margin: 0 auto;
@@ -339,7 +378,7 @@ aside .head-list, aside .head-list h4 {
 	max-width: 320px;
 	border: 2px solid #fff;
 	border-radius: 6px;
-	padding: 30px;
+	padding: 8px;
 }
 .items:hover {
 	border: 2px solid #EF6C00;
@@ -348,7 +387,7 @@ aside .head-list, aside .head-list h4 {
 	max-width: 420px;
 	margin-bottom: 0;
 }
-.price, .quantity {
+#price .price, #price .quantity {
 	display: inline-table;
 	font-size: 3rem;
 	color: #666;
@@ -441,13 +480,25 @@ footer {
 	padding: 0;
 }
 .card_block {
-	border: 1px solid #eee;
-	border-radius: 6px;
 	padding: 20px;
 } 
 .login-form {
 	background: #fff;
 	padding: 0;
+}
+.input__title {
+    line-height: 18px;
+    font-size: 14px;
+    padding-bottom: 6px;
+    font-weight: normal;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+    display: block;
+    cursor: pointer;
+    color: #333333;
+    box-sizing: border-box; 
 }
 @media screen and (max-width: 980px) {
 	.nav a {
@@ -481,5 +532,8 @@ footer {
    }
    .logo {	
 	height: 100px; }
-
+	.card_block {
+	padding: 0px; } 
+	.table tbody tr td {
+	font-size: 1.3rem;}
 }
