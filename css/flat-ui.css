@@ -841,14 +841,12 @@ fieldset[disabled] .btn-primary.active {
   color: #EF6C00;
   background-color: transparent;
   border-color: #EF6C00;
-  box-shadow: inset 0px 0px 0px 1px #EF6C00;
   }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   background-color: #fff;
   border-color: #EF6C00;
-  box-shadow: inset 0px 0px 0px 1px #EF6C00;
   }
 .btn-info.disabled,
 .btn-info[disabled],

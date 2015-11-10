@@ -52,9 +52,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav center-block">
-        <li class="active"><a href="index.html"> Каталог <span class="sr-only">(current)</span></a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="#">Оплата и доставка</a></li>
+        <li class="active"><a href="index.html"> Архив <span class="sr-only">(current)</span></a></li>
+        <li><a href="news.html">Пропоганда</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
         <li><a href="about.html">О нас</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -129,14 +129,36 @@
 									<td class="text-right item_cost">440.00&nbsp;₽</td>
 									<td class="trash"></td>
 								</tr>
-								<!--
+								
 								<tr class="middle_index">
 									<td class="call_empty"></td>
-									<td>
-									<input type="tel" value="" data-rule-phone="true" placeholder="167021" class="form-control index" aria-invalid="true">
+									<td colspan="3">
+									<label class="radio">
+							            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+							            Доставка почтой
+							        </label>
+							        <label class="radio">
+							            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+							            Самовывоз
+							        </label>
+										<div class="row">
+										<div class="col-sm-5 col-sm-offset-1">
+									
+									<input type="tel" value="" data-rule-phone="true" placeholder="Индекс" class="form-control" aria-invalid="true" style="width: 100%;">
+										</div>
+										<div class="col-sm-5">
+									<button class="btn btn-primary" style="width: 100%;"> Рассчитать</button>
+										</div>
+										</div>
+										 <a class="login-link" href="https://pochta.ru/offices" target="_blank">Узнать свой индекс</a>
 									</td>
-									<td class="text-right">300.00&nbsp;₽</td>
-									<td class="trash"></td>
+									
+								</tr>
+								<tr>
+									<td class="call_empty"></td>
+									<td class="call_empty">Доставка:</td>
+									<td class="text-right item_cost call_empty">150.00&nbsp;₽</td>
+									<td class="trash call_empty"></td>
 								</tr>
 								<tr class="price_total">
 									<td class="call_empty"></td>
@@ -144,9 +166,11 @@
 									<td class="text-right">740.00&nbsp;₽</td>
 									<td class="trash"></td>
 								</tr>
-								-->
+							
+								
 							</tbody>
 					</table>
+					<!--
 					<hr/ class="dash copy">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3">
@@ -156,7 +180,7 @@
 						      <span class="input-group-btn">
 						        <button class="btn btn-default" type="button">Посчитать</button>
 						      </span>
-						    </div><!-- /input-group -->
+						    </div><!-- /input-group 
 						</div>
 					</div>
 					
@@ -174,14 +198,16 @@
 							</table>
 						</div>
 					</div>
-					
+					-->
 					<div class="row">
 						<div class="col-md-12">
 							<a class="btn btn-info copy hidden-xs" href="index.html"> ← Назад к покупкам </a>
 							<a class="btn btn-primary pull-right copy" href="cardblock.html"> Оформить заказ → </a>
 						</div>
 					</div>	
-					<hr/ class="copy">
+					
+				</div>
+					<hr/>
 					<div class="row">
 						<div class="col-md-4 col-sm-4">
 							<div class="centre-basket-banner copy center-block">
@@ -212,7 +238,7 @@
 						    </div>
 						</div>
 					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
