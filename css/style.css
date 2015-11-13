@@ -240,29 +240,50 @@ nav .pagination, nav .pagination a {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
+	margin-top: 15px;
 }
-.pie {
+.head_nav {
+	display: inline-block;
+	float: right;
+	height: 100px;
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	padding: 5px;
+}
+.head_nav hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-color: #ccc;
+}
+.account_box {
+	display: block;
+	margin: 0;
+	line-height: 25px;
+	
+}
+.card_box {
 	position: relative;
-	background: transparent;
-	padding: 9px;
-	color: #000;
-	border-bottom: 1px solid #fff;
+	padding: 5px;
+	padding-right: 48px;
+	cursor: pointer;
+	color: #000;	
 }
-.pie .fa-shopping-cart {
+.card_box:hover {
+	background-color:  #eee;	
+}
+.card_box span {
+	float: right;
+	line-height: 16px;
+}
+.card_box .fa-shopping-cart {
 	position: absolute;
 	right: 9px;
 	font-size: 30px;
-	line-height: 4.1rem;
+	line-height: 30px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
-.pie .cart-count {
-	
-}
-.pie .cart-count, .pie .cart-text {
-    display: block;
-    float: right;
-    margin-right: 2.6em;
-    font-size: 1.6rem;
- }
+
 .copy {
 	margin-top: 30px;
 }
@@ -271,7 +292,7 @@ aside .list-group-item {
 	background: #eee;
 	border: 0;
 }
-aside a, strong {
+aside a {
 	font-size: 1.5rem;
 }
 aside .head-list, aside .head-list h4 {
@@ -301,20 +322,15 @@ aside .head-list, aside .head-list h4 {
 }
 .thumbnail .btn {
 	font-size: 20px;
-	height: 40px;
-	width: 40px;
-	padding: 20;
-	padding-right: 12px;
-	padding-left: 12px;
-	line-height: 20px;
+	height: 30px;
+	width: 30px;
+	padding: 6px;
+	padding-right: 6px;
+	padding-left: 6px;
+	line-height: 15px;
 	border-radius: 50%;
-	background: #eee;
-	color: #666;
 	margin-left: 4px;
 	
-}
-.thumbnail .btn:hover {
-	color: #EF6C00;	
 }
 .thumbnail p {
 	margin: 0;
@@ -382,19 +398,18 @@ aside .head-list, aside .head-list h4 {
 .thumbnail .img-center, .items .img-center {
 	max-height: 270px;
 	margin: 0 auto;
+	outline: solid 1px rgba(0,0,0,0.2);
 }
 .items .img-center {
 	max-height: 370px;
 	margin: 0 auto;
+	cursor: url(img/zoom.png), auto;
 }
 .items {
 	max-width: 320px;
-	border: 2px solid #fff;
+	border: 2px solid #eee;
 	border-radius: 6px;
 	padding: 8px;
-}
-.items:hover {
-	border: 2px solid #EF6C00;
 }
 .description p {
 	max-width: 420px;
@@ -403,43 +418,35 @@ aside .head-list, aside .head-list h4 {
 #price .price, #price .quantity {
 	
 }
-.card {
-  font-family: 'Roboto', sans-serif;
+.carditems {
+	margin-bottom: 300px;
+}
+.news_card {
   overflow: hidden;
-  color: #272727;
-  border-radius: 2px; }
-  .card .title {
+  border: 2px solid #eee;
+  border-radius: 6px; }
+.news_card .title {
     line-height: 3rem;
-    font-size: 1.5rem;
-    font-weight: 300; }
-  .card .content {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px; }
+.news_card .content {
     padding: 1.3rem;
     font-weight: 300;
     border-radius: 0 0 2px 2px; }
-  .card p {
-    margin: 0; }
-  .card .action {
-    border-top: 1px solid #eee;
-    padding: 1.3rem; }
-  .card a {
-    color: #ffab40;
-    margin-right: 1.3rem;
-    transition: color 0.3s ease;
-    text-transform: uppercase;
-    text-decoration: none; }
-  .card .image {
-    position: relative; }
-    .card .image .title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 1.3rem;
-      color: #fff; }
-    .card .image img {
-      border-radius: 2px 2px 0 0; }
- .image {
- 	background: #eee;
- }
+.news_card  .news_img {
+  	width: 100%;
+  	max-width: 586px;
+  	max-height: 252px;
+  	border: 1px solid #ccc;
+  	background-color: #eee;
+  	border-radius: 6px;
+  	display: inline-block;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    vertical-align: top;
+  }
 .vk {
 	height: 32px;
 	width: 32px;
@@ -501,16 +508,23 @@ footer {
     line-height: 18px;
     font-size: 14px;
     padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: normal;
     width: 100%;
     margin-bottom: 0;
     display: block;
     cursor: pointer;
-    color: #333333;
     box-sizing: border-box; 
 }
 .delivery li {
 	margin-bottom: 20px;
+}
+.pagination {
+	display: inline-block;
+}
+.nav_select {
+	text-align: right;
 }
 @media screen and (max-width: 980px) {
 	.nav a {
@@ -534,8 +548,9 @@ footer {
 	width: 100%;
 	color: #fff;
 	background-color: #EF6C00;
-	background-image: none;
-}
+	background-image: none;}
+.nav_select {
+	text-align: center;}
 
 }
 @media screen and (max-width: 480px) {
@@ -549,4 +564,5 @@ footer {
 	border: 0px; } 
 	.table tbody tr td {
 	font-size: 1.3rem;}
+	
 }

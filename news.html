@@ -13,26 +13,37 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="btn-group btn-group-xs pull-right" role="group" aria-label="...">
-						<button type="button" class="btn btn-top"> Мой аккаунт </button>
+			<div class="row visible-xs">
+				<div class="col-md-12 text-center">
+					<div class="btn-group btn-group-xs" role="group" aria-label="...">
+						<a type="button" class="btn btn-top" href="account.html"> Мой аккаунт </a>
 						<button type="button" class="btn btn-top hidden-lg hidden-md"> <i class="fa fa-shopping-cart"></i> <span> (0) </span></button>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-4">
+	
+				<a href="index.html">
 					<div class="logo"></div>
+				</a>
+
 				</div>
-				<div class="col-md-3">
-					
-						<button class="btn pie pull-right hidden-sm hidden-xs">
-							<span class="cart-count"> Вещей в корзине (0) </span>
-							<span class="cart-text"> 0,00 ₽ </span>
-							 <i class="fa fa-shopping-cart fa-lg"></i>
-						</button>
-					
+				<div class="col-md-3 col-sm-4">
+
+						<!-- <a class="login-link pull-right" href="account.html">Мой аккаунт</a> -->
+					<nav class="head_nav hidden-xs">
+						
+							<a class="account_box p_small text-center" href="account.html"><span>Мой аккаунт</span></a>
+							<hr/>
+						
+						<a class="card_box pull-right p_small" href="card.html">
+							<i class="fa fa-shopping-cart fa-lg"></i>
+							<span class="cart-count"> В&nbsp;корзине&nbsp;(0) </span> <br/>
+							<span class="cart-text"> 0,00&nbsp;₽ </span>
+							
+						</a>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -52,148 +63,67 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav center-block">
-        <li class="active"><a href="index.html"> Каталог <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Оплата и доставка</a></li>
-        <li><a href="#">О нас</a></li>
+        <li class="active"><a href="index.html"> Архив <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Пропаганда</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="about.html">О нас</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 	<div class="container">
 		<div class="row">
-			<div class="hidden-xs col-md-3 col-sm-4">
-				<div class="input-group">
-			      <input type="text" class="form-control" placeholder="Найди свой комикс...">
-			      <span class="input-group-btn">
-			        <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
-			      </span>
-			    </div>
-				<aside class="list-group copy">
-					<div class="list-group-item">
-					    <div role="tab" id="headingOne">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          Комиксы на русском
-					        </a>
-					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-					      <div class="panel-body">
-					      	<ul class="list-unstyled">
-					      		<li><a href="#"> Любые </a></li>
-					        	<li><a href="#"> MC </a></li>
-								<li><a href="#"> Marvel </a></li>
-								<li><a href="#"> Bubble </a></li>
-								<li><a href="#"> что то еще </a></li>
-							</ul>
-					      </div>
-					    </div>
-					</div>
-					<div class="list-group-item">
-					    <div role="tab" id="headingTwo">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-					          Артбуки и энциклопедии
-					        </a>
-					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-					      <div class="panel-body">
-					      	<ul class="list-unstyled">
-					        	<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-							</ul>
-					      </div>
-					    </div>
-					</div>
-					<div class="list-group-item">
-					    <div role="tab" id="heading3">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapseOne">
-					          Манга
-					        </a>
-					    </div>
-					    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-					      <div class="panel-body">
-					      	<ul class="list-unstyled">
-					        	<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-							</ul>
-					      </div>
-					    </div>
-					</div>
-					<div class="list-group-item">
-					    <div role="tab" id="heading4">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapseOne">
-					          Книги
-					        </a>
-					    </div>
-					    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-					      <div class="panel-body">
-					      	<ul class="list-unstyled">
-					        	<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-							</ul>
-					      </div>
-					    </div>
-					</div>
-					<div class="list-group-item">
-					    <div role="tab" id="heading5">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapseOne">
-					          Сувениры
-					        </a>
-					    </div>
-					    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-					      <div class="panel-body">
-					      	<ul class="list-unstyled">
-					        	<li><a href="#"> Значки </a></li>
-								<li><a href="#"> Наклейки </a></li>
-								<li><a href="#"> Периодика </a></li>
-								<li><a href="#"> Периодика </a></li>
-							</ul>
-					      </div>
-					    </div>
-					</div>
-				</aside>
-				<aside>
-					<div class="list-group">
-					  <div class="list-group-item head-list">
-					    <h4> Топ продаж </h4>
-					  </div>
-					  <a href="#" class="list-group-item">
-					    <h4 class="list-group-item-heading">Эра Альтрона</h4>
-					    <p class="list-group-item-text">Книга 2</p>
-					  </a>
-					  <a href="#" class="list-group-item">
-					    <h4 class="list-group-item-heading">Росомаха</h4>
-					    <p class="list-group-item-text">Старик Логан</p>
-					  </a>
-					  <a href="#" class="list-group-item">
-					    <h4 class="list-group-item-heading">Бэтмен</h4>
-					    <p class="list-group-item-text">Книга 2. Город Сов</p>
-					  </a>
-					</div>
-				</aside>
-			</div>
-			<div class="col-md-9 col-sm-8">
-				<h4>Новости</h4>
+			<div class="col-md-10 col-md-offset-1">
+				<div class="page-header">
+  						<h3>Пропаганда</h3>
+  				</div>
+  				<div class="card_block">
 				<div class="row">
-				  <div class="col-md-12 copy">
-				    <div class="card">
+				  <div class="col-md-8 col-md-offset-2">
+				    <div class="news_card">
 				      <div class="content">
-				        <span class="title">Расписание поступлений: с 26 октября по 1 ноября</span>
-				        <p>-сегодня в продаже появится "Метеора" №13, а в середине недели - первый выпуск кроссовера "Время Ворона";
-							-в среду - "Подростки Мутанты Ниндзя Черепашки" №17-18 и календарь "ПМНЧ" на 2016 год, а до конца недели - долгожданный четвертый том "Скотта Пилигрима";
-							Также на этой неделе мы пополним запасы книги "Назад в будущее. История создания", и неожиданно получим еще одну партию комикса "Дэдпул уничтожает вселенную Marvel".
+				        <p class="title">Новинки от Bubble </p>
+				        <p class="p_small">13 ноября 2015</p>
+				        <p class="copy">Время Ворона том первый, настольная игра и&nbsp;снова в&nbsp;наличии Артбук The Art of&nbsp;Bubble, плюс допечатка первого тома &laquo;У&nbsp;меня мало друзей&raquo; и&nbsp;&laquo;Один прекрасный день&raquo;&nbsp;&mdash; новиночка тоже.
+						Приятных вам покупок!
 						</p>
-				      </div>
-				      <div class="action">
-				        <span class="title">Рассказать друзьям</span>
-				      </div>
+						<div class="news_img">
+				      		<img src="img/16.jpg" class="img-responsive">
+				      	</div>
+				      </div>			      
+				    </div>
+				    <div class="news_card copy">
+				      <div class="content">
+				        <p class="title">Пополнение значков Waf-Waf</p>
+				        <p class="p_small">11 ноября 2015</p>
+				        <p class="copy">Найти друзей по интересам проще с Waf-Waf!
+						</p>
+						<div class="news_img">
+				      		<img src="img/17.jpg" class="img-responsive">
+				      	</div>
+				      </div>			      
 				    </div>
 				  </div>
+				</div>
+				<div class="row">
+					<nav class="col-md-12 text-center">
+					  <ul class="pagination copy">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				</div>
 				</div>
 			</div>
 		</div>

@@ -13,26 +13,37 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="btn-group btn-group-xs pull-right" role="group" aria-label="...">
-						<button type="button" class="btn btn-top"> Мой аккаунт </button>
+			<div class="row visible-xs">
+				<div class="col-md-12 text-center">
+					<div class="btn-group btn-group-xs" role="group" aria-label="...">
+						<a type="button" class="btn btn-top" href="account.html"> Мой аккаунт </a>
 						<button type="button" class="btn btn-top hidden-lg hidden-md"> <i class="fa fa-shopping-cart"></i> <span> (0) </span></button>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-4">
+	
+				<a href="index.html">
 					<div class="logo"></div>
+				</a>
+
 				</div>
-				<div class="col-md-3">
-					
-						<button class="btn pie pull-right hidden-sm hidden-xs">
-							<span class="cart-count"> Вещей в корзине (0) </span>
-							<span class="cart-text"> 0,00 ₽ </span>
-							 <i class="fa fa-shopping-cart fa-lg"></i>
-						</button>
-					
+				<div class="col-md-3 col-sm-4">
+
+						<!-- <a class="login-link pull-right" href="account.html">Мой аккаунт</a> -->
+					<nav class="head_nav hidden-xs">
+						
+							<a class="account_box p_small text-center" href="account.html"><span>Мой аккаунт</span></a>
+							<hr/>
+						
+						<a class="card_box pull-right p_small" href="card.html">
+							<i class="fa fa-shopping-cart fa-lg"></i>
+							<span class="cart-count"> В&nbsp;корзине&nbsp;(0) </span> <br/>
+							<span class="cart-text"> 0,00&nbsp;₽ </span>
+							
+						</a>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -53,7 +64,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav center-block">
         <li class="active"><a href="index.html"> Архив <span class="sr-only">(current)</span></a></li>
-        <li><a href="news.html">Пропоганда</a></li>
+        <li><a href="news.html">Пропаганда</a></li>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="about.html">О нас</a></li>
       </ul>
@@ -98,7 +109,7 @@
 				  							× <input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
 				  						</span></td>
 									<td class="item_cost money text-right">120.00&nbsp;₽</td>
-									<td class="text-right trash"><a href="#"><i class="fa fa-trash"></i></a></td>
+									<td class="text-right trash"><a href="#"><i class="fa fa-trash-o"></i></a></td>
 								</tr>
 								<tr>
 									<td class="product_name"> 
@@ -121,7 +132,7 @@
 				  							× <input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
 				  						</span></td>
 									<td class="item_cost money text-right">200.00&nbsp;₽</td>
-									<td class="text-right trash"><a href="#"><i class="fa fa-trash"></i></a></td>
+									<td class="text-right trash"><a href="#"><i class="fa fa-trash-o"></i></a></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -139,7 +150,7 @@
 							        </label>
 							        <label class="radio">
 							            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
-							            Самовывоз
+							            Самовывоз 
 							        </label>
 										<div class="row">
 										<div class="col-sm-5 col-sm-offset-1">
@@ -201,7 +212,7 @@
 					-->
 					<div class="row">
 						<div class="col-md-12">
-							<a class="btn btn-info copy hidden-xs" href="index.html"> ← Назад к покупкам </a>
+							<a class="btn btn-info copy" href="index.html"> ← Назад </a>
 							<a class="btn btn-primary pull-right copy" href="cardblock.html"> Оформить заказ → </a>
 						</div>
 					</div>	
