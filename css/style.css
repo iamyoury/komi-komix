@@ -72,13 +72,13 @@ hr {
 }
 .baner {
 	position: relative;
-	height: 300px;
+	height: 260px;
 	width: 100%;
 	color: #fff;
 	background-color: #EF6C00;
 	background-image: url("../img/7.png");
 	background-repeat: no-repeat;
-	background-size: 500px;
+	background-size: 450px;
 	background-position: 90% -10%;
 	margin-bottom: 30px;
 	padding-left: 20px;
@@ -127,6 +127,7 @@ hr {
 }
 h2 small {
 	font-weight: 300;
+	color: #fff;
 }
 h3 small {
 	font-weight: 300;
@@ -259,6 +260,7 @@ nav .pagination, nav .pagination a {
 	display: block;
 	margin: 0;
 	line-height: 25px;
+	cursor: pointer;
 	
 }
 .card_box {
